@@ -8,6 +8,7 @@
     curl -sS https://getcomposer.org/installer | php
     creates={{ composer_path }}
 
+
 - name: "Move Composer into globally-accessible location."
   when: 
     ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'trusty'
